@@ -1,5 +1,7 @@
 package com.application;
 
+import com.application.config.RootConfiguration;
+import com.application.util.Application;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

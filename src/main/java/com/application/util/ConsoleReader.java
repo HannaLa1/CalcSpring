@@ -1,4 +1,4 @@
-package com.application;
+package com.application.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 @Data
 @AllArgsConstructor
-public class ExpInput {
+public class ConsoleReader {
     private Scanner scanner;
 
     public int expInputKey(int from, int to) {
@@ -55,5 +55,16 @@ public class ExpInput {
         System.out.println("------------------------------------------------------------");
         System.out.println("Input number >>> ");
         return expInput();
+    }
+
+    public void consoleInfo(){
+        System.out.println("------------------------------------------------------------");
+        System.out.println("Choose type of operation:");
+        System.out.println("[1] - sum");
+        System.out.println("[2] - sub");
+        System.out.println("[3] - mul");
+        System.out.println("[4] - div");
+        System.out.println("[0] - exit");
+        System.out.println("------------------------------------------------------------");
     }
 }
